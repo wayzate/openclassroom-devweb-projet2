@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  font-family: "Raleway", "Sans serif";
+}
+
 .bonjour{
   font-size: 48px;
 }
 
-@font-face {
-font-family: 'raleway';
-src: url('Raleway-VariableFont_wght.ttf') format('ttf'),
-}
 
 .container {
   background-color: pink;
@@ -161,8 +163,10 @@ text-decoration: none;
 }
 
 footer ul {
-list-style-type: none;
-color: #464646;
+  list-style-type: none;
+  color: #464646;
+  margin: 0px;
+  padding: 0px;
 }
 
 footer a:hover /* Apparence au survol des liens */ {
@@ -186,7 +190,6 @@ footer a:hover /* Apparence au survol des liens */ {
 
 body
 {
-  font-family: 'raleway', 'Trebuchet MS', Arial, sans-serif;
   margin: auto;
 }
 
@@ -203,7 +206,6 @@ h1
   font-size: 1.90em;
   font-weight: bold;
   margin: 15px 0 0 0;
-  font-family: 'raleway', sans-serif;
 }
 
 h2
@@ -211,14 +213,12 @@ h2
   font-size: 1.5em;
   font-weight: bold;
   margin: 15px 0 0 20px;
-  font-family: 'raleway', sans-serif;
 }
 
 h3
 {
   font-size: 1.18em;
   font-weight: bold;
-  font-family: 'raleway', sans-serif;
 }
 
 p
