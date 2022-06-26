@@ -4,9 +4,6 @@
   font-family: "Raleway", "Sans serif";
 }
 
-.bonjour{
-  font-size: 48px;
-}
 
 
 .container {
@@ -19,6 +16,10 @@
 }
 
 /* HEADER */
+
+.logoBooki {
+
+}
 
 .header {
   display: flex;
@@ -48,25 +49,72 @@
     flex-direction: column;
 }
 
-.search {
-background-color: skyblue;
+.formSearch {
+  display: flex;
+  flex-direction: row;
 }
 
-.searchbutton {
-background-color: white;
-display: flex;
-flex-direction: row;
+
+form.recherche button[type="none"] {
+    background: #F2F2F2;
+    border: 1px #F2F2F2 solid;
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 15px 0 0 15px;
+    padding-top: 7px;
+    padding-bottom: 10px;
 }
 
 form.recherche button[type="submit"] {
     display: flex;
-    flex-direction: row;
     background: #0065FC;
     border: 1px #0065FC solid;
     border-radius: 0 15px 15px 0;
     color: #FFF;
     height: 43px;
     padding: 0px 15px;
+}
+
+@media (max-width:640px) {
+    form.recherche button[type="submit"] {
+        border-radius: 15px 15px 15px 15px !important;
+        margin-left: -15px !important;
+    }
+}
+
+@media (max-width:640px) {
+  .textbtn {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (min-width:640px) {
+    p.textbtn2 {
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+form.recherche {
+    display: flex;
+    text-align: inherit;
+}
+
+@media (max-width:640px) {
+    form.recherche {
+        display: flex;
+        text-align: center !important;
+    }
+}
+
+form.recherche input {
+    background: transparent;
+    border: 1px #F2F2F2 solid;
+    padding: 11px 5vw;
+    margin-left: -4px;
 }
 
 
@@ -78,15 +126,22 @@ form.recherche button[type="submit"] {
     font-size: 15px;
 }
 
+.filtres {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
 .filtres,
 .filtres .content {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center;; 
 }
 
 .filtres .title {
+    margin-bottom: 20px;
     padding-top: inherit;
     padding-right: 20px;
 }
@@ -160,6 +215,10 @@ p.NbLogements {
 }
 
 
+.hebergementsSection {
+  display: flex;
+  flex-flow: row wrap;
+}
 
 /* HEBERGEMENTS */
 .hebergements {
@@ -169,6 +228,10 @@ background-color: #F2F2F2;
 /* LES PLUS POPULAIRES */
 .LesPlusPop {
 background-color: #F2F2F2;
+}
+
+.activitiesSection {
+  
 }
 
 /* ACTIVITES A MARSEILLE */
@@ -235,12 +298,11 @@ main
   margin: auto;
 }
 
-h1
-{
-  font-size: 1.90em;
-  font-weight: bold;
-  margin: 15px 0 0 0;
+
+h1 {
+    font-size: 1em
 }
+
 
 h2
 {

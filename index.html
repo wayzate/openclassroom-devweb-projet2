@@ -13,7 +13,9 @@
     <!-- Zone du header -->
     <div class="container">
         <header class="header">
-            <img class="headerLeftImg" href="#" src="images/logo/Booki@3x.png" alt="logo de booki"> 
+            <div class="logoBooki">
+                <img class="headerLeftImg" href="#" src="images/logo/Booki@3x.png" alt="logo de booki"> 
+            </div>
             <nav class="headerLinks">
                 <a href="#hébergements" class="headerLink">Hébergements</a>
                 <a href="#activités" class="headerLink">Activités</a>
@@ -21,151 +23,152 @@
             </nav>
         </header>
 
-    <!-- Zone de recherche -->
-        <section class="search">
+        <!-- Zone de recherche -->
+        <section class="recherche">
             <div class="searchzone">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <form method="post" action="#" class="recherche">
-                <div>
-                    <i></i>
-                    <input type="search" id="site-search" name="rechercher" placeholder="Mon cul, France">
-                    <button class="textbtn" type="submit"><span>Rechercher</span></button>
+            <div>
+                <form method="post" action="#" class="recherche">
+                    <div class="formSearch">
+                        <button type="none"><i class="fas fa-map-marker-alt"></i></button>
+                        <input type="search" id="site-search" name="rechercher" placeholder="MML ass, Wéunion">
+                        <button class="btnrecherche" type="submit">
+                            <p class="textbtn">Rechercher</p>
+                            <p class="textbtn2"><i class="fas fa-search"></i></p>
+                        </div>
+                    </form>
                 </div>
-            </form>
-        </section>
+            </section>
 
 
- <!-- Zone des filtres -->
-    <section>
-    <div class="filtres">
-        <b class="title">Filtres</b>
-        <div class="content">
-            <div class="boutonfiltre">
-                <i class="fa fa-money-bill-wave"></i>
-                <p>Economique</p>
+            <!-- Zone des filtres -->
+            <section>
+                <div class="filtres">
+                    <b class="title">Filtres</b>
+                    <div class="content">
+                        <div class="boutonfiltre">
+                            <i class="fa fa-money-bill-wave"></i>
+                            <p>Economique</p>
+                        </div>
+                        <div class="boutonfiltre">
+                            <i class="fa fa-child"></i>
+                            <p>Famillial</p>
+                        </div>
+                        <div class="boutonfiltre">
+                            <i class="fa fa-heart"></i>
+                            <p>Romantique</p>
+                        </div>
+                        <div class="boutonfiltre">
+                            <i class="fa fa-dog"></i>
+                            <p>Animaux autorisés</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="nombrelogementstxt">
+                <p><i class="fas fa-info"></i></p>
+                <p class="NbLogements ">Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-            <div class="boutonfiltre">
-                <i class="fa fa-child"></i>
-                <p>Famillial</p>
-            </div>
-            <div class="boutonfiltre">
-                <i class="fa fa-heart"></i>
-                <p>Romantique</p>
-            </div>
-            <div class="boutonfiltre">
-                <i class="fa fa-dog"></i>
-                <p>Animaux autorisés</p>
-            </div>
-        </div>
-    </div>
-    </section>
-        <div class="nombrelogementstxt">
-            <p><i class="fas fa-info"></i></p>
-            <p class="NbLogements ">Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-
- <!-- Zone activités -->
-<main>
-    <section>
-        <div class="hebergements">
-            <h1>Hebergements à Marseille</h1>
-                <p><strong>Auberge la Cannnebière</strong></p>
-                    <p>Nuit à partir de <strong>25€</strong></p>
-
-                <p><strong>Hôtel du port</strong></p>
-                    <p>Nuit à partir de <strong>52€</strong></p>
-
-                <p><strong> Hôtel les mouettes</strong></p>
-                    <p>Nuit à partir de <strong>76€</strong></p>
-
-                <p><strong>Hôtel de la mer</strong></p>
-                    <p>Nuit à partir de <strong>46€</strong></p>
-
-                <p><strong>Auberge Le Panier</strong></p>
-                    <p>Nuit à partir de <strong>23€</strong></p>
-
-                <p><strong>Hôtel chez Amina</strong></p>
-                    <p>Nuit à partir de <strong>96€</strong></p>
-                                        
-            <p><strong>Afficher plus</strong></p>              
-        </div>
-
-        <div class="LesPlusPop">
-            <h1>Les plus populaires</h1>
-            <p><strong>Hôtel le soleil du matin</strong></p>
-                <p>Nuit à partir de <strong>128€</strong></p>
-
-            <p><strong>Au coeur de l'eau Chambre d'hôte</strong></p>
-                <p>Nuit à partir de <strong>71€</strong></p>
-
-            <p><strong>Hôtel tout Bleu et Blanc</strong></p>
-                <p>Nuit à partir de <strong>68€</strong></p>                     
-                      
-        </div>
-
-        <div class="ActiMars">
-                <h1>Activités à Marseille</h1>
-            <div>
-                <p><strong>Vieux Port</strong></p>
-            </div>
-            
-            <div>
-                <p><strong>Fort de Pomègues</strong></p>
-            </div>
-            
-            <div>
-                <p><strong>Îles du Frioul</strong></p>
-            </div>
-            
-            <div>
-                <p><strong>Parc National des Calanques</strong></p>
-            </div>
-            
-            <div>
-                <p><strong>Notre-Dame-de-la-Garde</strong></p>
-            </div>
-            
-            <div>
-                <p><strong>Parc LongChamp</strong></p>
-            </div>
-        </div>
 
 
-    </section>
 
-</main>
+            <!-- Zone activités -->
+            <main>
+                <section class="hebergementsSection">
+                    <div class="hebergements">
+                        <h1>Hebergements à Marseille</h1>
+                        <p><strong>Auberge la Cannnebière</strong></p>
+                        <p>Nuit à partir de <strong>25€</strong></p>
+
+                        <p><strong>Hôtel du port</strong></p>
+                        <p>Nuit à partir de <strong>52€</strong></p>
+
+                        <p><strong> Hôtel les mouettes</strong></p>
+                        <p>Nuit à partir de <strong>76€</strong></p>
+
+                        <p><strong>Hôtel de la mer</strong></p>
+                        <p>Nuit à partir de <strong>46€</strong></p>
+
+                        <p><strong>Auberge Le Panier</strong></p>
+                        <p>Nuit à partir de <strong>23€</strong></p>
+
+                        <p><strong>Hôtel chez Amina</strong></p>
+                        <p>Nuit à partir de <strong>96€</strong></p>
+
+                        <p><strong>Afficher plus</strong></p>              
+                    </div>
+
+                    <div class="LesPlusPop">
+                        <h1>Les plus populaires</h1>
+                        <p><strong>Hôtel le soleil du matin</strong></p>
+                        <p>Nuit à partir de <strong>128€</strong></p>
+
+                        <p><strong>Au coeur de l'eau Chambre d'hôte</strong></p>
+                        <p>Nuit à partir de <strong>71€</strong></p>
+
+                        <p><strong>Hôtel tout Bleu et Blanc</strong></p>
+                        <p>Nuit à partir de <strong>68€</strong></p>                     
+                    </div>
+                </section>
+                <section class="activitiesSection">
+                    <div class="ActiMars">
+                        <h1>Activités à Marseille</h1>
+                        <div>
+                            <p><strong>Vieux Port</strong></p>
+                        </div>
+
+                        <div>
+                            <p><strong>Fort de Pomègues</strong></p>
+                        </div>
+
+                        <div>
+                            <p><strong>Îles du Frioul</strong></p>
+                        </div>
+
+                        <div>
+                            <p><strong>Parc National des Calanques</strong></p>
+                        </div>
+
+                        <div>
+                            <p><strong>Notre-Dame-de-la-Garde</strong></p>
+                        </div>
+
+                        <div>
+                            <p><strong>Parc LongChamp</strong></p>
+                        </div>
+                    </div>
+                </section>
+            </main>
 
 
 
 
-    <!-- Zone du footer -->
-    <footer class="footer">  
-            <div class="col_footer">
-                <ul>
-                    <li><h3>A propos</h3></li>
-                    <li><a href="#">Fonctionnement du site</a></li>
-                    <li><a href="#">Conditions générales de vente</a></li>
-                    <li><a href="#">Données et confidentialité</a></li>
-                </ul>
-            </div>
-            <div class="col_footer">
-                <ul>
-                    <li><h3>Nos hébergements</h3></li>
-                    <li><a href="#">Charte de qualité</a></li>
-                    <li><a href="#">Soumettre votre hôtel</a></li>
-                </ul>
-            </div>
-            <div class="col_footer">
-                <ul>
-                    <li><h3>Assistance</h3></li>
-                    <li><a href="#">Centre d'aide</a></li>
-                    <li><a href="#">Nous contacter</a></li>
-                </ul>
-            </div>  
-    </footer>
-</body>
-</html>
-
-
+            <!-- Zone du footer -->
+            <footer class="footer">  
+                <div class="col_footer">
+                    <ul>
+                        <li><h3>A propos</h3></li>
+                        <li><a href="#">Fonctionnement du site</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Données et confidentialité</a></li>
+                    </ul>
+                </div>
+                <div class="col_footer">
+                    <ul>
+                        <li><h3>Nos hébergements</h3></li>
+                        <li><a href="#">Charte de qualité</a></li>
+                        <li><a href="#">Soumettre votre hôtel</a></li>
+                    </ul>
+                </div>
+                <div class="col_footer">
+                    <ul>
+                        <li><h3>Assistance</h3></li>
+                        <li><a href="#">Centre d'aide</a></li>
+                        <li><a href="#">Nous contacter</a></li>
+                    </ul>
+                </div>  
+            </footer>
+        </body>
+        </html>
