@@ -1,3 +1,233 @@
 .bonjour{
-	font-size: 48px;
+  font-size: 48px;
+}
+
+@font-face {
+font-family: 'raleway';
+src: url('Raleway-VariableFont_wght.ttf') format('ttf'),
+}
+
+.container {
+  background-color: pink;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main {
+  background-color: floralwhite; 
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  background-color: yellowgreen;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.headerLeftImg {
+  background-color: palevioletred;
+}
+.headerLinks {
+  display: flex;
+  background-color: lightgreen;
+  align-items: center;
+}
+
+.headerLink {
+  background-color: purple;
+  border-top: 2px solid grey;
+}
+
+/* RECHERCHE */
+
+.searchzone h1 {
+    margin: 15px 0 0 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+background-color: skyblue;
+}
+
+.searchbutton {
+background-color: white;
+display: flex;
+flex-direction: row;
+}
+
+form.recherche button[type="submit"] {
+    display: flex;
+    flex-direction: row;
+    background: #0065FC;
+    border: 1px #0065FC solid;
+    border-radius: 0 15px 15px 0;
+    color: #FFF;
+    height: 43px;
+    padding: 0px 15px;
+}
+
+
+
+/* FILTRES */
+
+.filtres {
+display: flex;
+flex-direction: column;
+padding: 20px 0;
+}
+
+.boutonfiltre {
+    font-weight: bold;
+    font-size: 15px;
+    margin: auto;
+}
+
+.filtres,
+.filtres .content {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.filtres .title {
+    margin-bottom: 20px;
+    padding-top: inherit;
+    padding-right: 20px;
+}
+
+.filtres .boutonfiltre {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 200px;
+    border: 2px #F2F2F2 solid;
+    height: 50px;
+    position: relative;
+    padding-left: 55px;
+    padding-right: 14px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.nombrelogementstxt {
+    padding: 5px 0;
+    display: inline-flex;
+}
+
+.NbLogements p {
+    margin: auto;
+    padding-left: 3px;
+}
+
+
+
+/* HEBERGEMENTS */
+.hebergements {
+background-color: #F2F2F2;
+}
+
+/* LES PLUS POPULAIRES */
+.LesPlusPop {
+background-color: #F2F2F2;
+}
+
+/* ACTIVITES A MARSEILLE */
+.ActiMars {
+background-color: white;
+}
+
+/* FOOTER */
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background: #F2F2F2;
+  color: black;
+  width: 100%;
+  margin-top: 50px;
+}
+
+footer h3 {
+color: black;
+}
+
+footer a {
+text-decoration: none;
+}
+
+footer ul {
+list-style-type: none;
+color: #464646;
+}
+
+footer a:hover /* Apparence au survol des liens */ {
+   text-decoration: underline;
+}
+
+.col_footer {
+  padding: 20px;
+  width: 100%;
+  padding-left: 10%;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+  margin-right: 15px;
+}
+
+
+
+/* CSS général de la page */
+
+
+body
+{
+  font-family: 'raleway', 'Trebuchet MS', Arial, sans-serif;
+  margin: auto;
+}
+
+main
+{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+}
+
+h1
+{
+  font-size: 1.90em;
+  font-weight: bold;
+  margin: 15px 0 0 0;
+  font-family: 'raleway', sans-serif;
+}
+
+h2
+{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 15px 0 0 20px;
+  font-family: 'raleway', sans-serif;
+}
+
+h3
+{
+  font-size: 1.18em;
+  font-weight: bold;
+  font-family: 'raleway', sans-serif;
+}
+
+p
+{
+  font-size: 1em;
+}
+
+a 
+{
+  color: inherit;
+  text-decoration: none;
 }
