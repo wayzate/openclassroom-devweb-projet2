@@ -10,9 +10,6 @@
 
 
 .container {
-  background-color: pink;
-  padding-right: 15px;
-  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -76,26 +73,20 @@ form.recherche button[type="submit"] {
 
 /* FILTRES */
 
-.filtres {
-display: flex;
-flex-direction: column;
-padding: 20px 0;
-}
-
 .boutonfiltre {
     font-weight: bold;
     font-size: 15px;
-    margin: auto;
 }
 
 .filtres,
 .filtres .content {
     display: flex;
     flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .filtres .title {
-    margin-bottom: 20px;
     padding-top: inherit;
     padding-right: 20px;
 }
@@ -115,12 +106,55 @@ padding: 20px 0;
     cursor: pointer;
 }
 
+.filtres .boutonfiltre:hover {
+    transform: scale(1.05);
+}
+
+.filtres .boutonfiltre:first-child {
+    margin-left: 0;
+}
+
+.filtres .boutonfiltre:last-child {
+    margin-right: 0;
+}
+
+.filtres .boutonfiltre i {
+    line-height: 50px;
+    color: #0065FC;
+    position: absolute;
+    width: 50px;
+    text-align: center;
+    background: #DEEBFF;
+    left: -2px;
+    border-radius: 100%;
+}
+
+.boutonfiltre p {
+    margin: auto;
+}
+
+
 .nombrelogementstxt {
     padding: 5px 0;
     display: inline-flex;
 }
 
-.NbLogements p {
+.nombrelogementstxt i {
+    border: 2px solid #F2F2F2;
+    width: 29px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #0065FC;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 29px;
+}
+
+p.NbLogements {
     margin: auto;
     padding-left: 3px;
 }
@@ -212,7 +246,6 @@ h2
 {
   font-size: 1.5em;
   font-weight: bold;
-  margin: 15px 0 0 20px;
 }
 
 h3
