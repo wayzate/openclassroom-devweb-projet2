@@ -215,6 +215,12 @@ p.NbLogements {
 }
 
 
+/* COMMUM HEB et POP */
+.etoilesnote {
+  color: #0065FC;
+  font-size: 12px;
+}
+
 .hebergementsSection {
   display: flex;
   flex-flow: row wrap;
@@ -223,21 +229,139 @@ p.NbLogements {
 /* HEBERGEMENTS */
 .hebergements {
 background-color: #F2F2F2;
+border-radius: 20px;
+padding: 30px 25px;
+min-height: 519px;
+margin-bottom: 20px;
 }
+
+.hebergementsClassiques {
+    order: 1;
+    flex: 1;
+    margin-right: 3%;
+}
+
+.group-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+.group-item img {
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.group-item figure {
+    width: calc(100% / 3.3);
+    background: #FFF;
+    padding: 0.3rem;
+    border-radius: 1.25rem;
+    margin: 0 0 30px 0;
+    box-shadow: 0px 0px 10px #55555538;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.group-item figure figcaption {
+    padding: 10px;
+    position: relative;
+}
+
+.group-item figure figcaption p {
+    margin: 0;
+}
+
+.group-item figure figcaption p:first-child {
+    font-size: 14px;
+}
+
+.group-item figure figcaption p:nth-child(2) {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+
+
+
+
+
 
 /* LES PLUS POPULAIRES */
 .LesPlusPop {
 background-color: #F2F2F2;
 }
 
-.activitiesSection {
-  
+.stonk {
+    display: flex;
+    justify-content: space-between;
 }
 
+figure:hover {
+    transform: scale(1.02);
+}
+
+.item:hover {
+    transform: scale(1.02);
+}
+
+
+
 /* ACTIVITES A MARSEILLE */
+
 .ActiMars {
 background-color: white;
 }
+
+.activitiesSection .fondgris h1 {
+    margin-left: 25px;
+}
+
+.activitiesSection .flex-container {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px 15px;
+}
+
+.activitiesSection .fondgris h1 {
+    margin-left: 25px;
+}
+
+.activitiesSection .flex-container {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 15px 15px;
+}
+
+.activiteimg img {
+    height: 100%;
+    max-height: 100px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.item {
+  padding: 3px;
+  background: #FFF;
+  border-radius: 20px;
+  margin: 0 0 30px 0;
+  -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+  -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+  box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
 
 /* FOOTER */
 
