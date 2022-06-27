@@ -226,6 +226,15 @@ p.NbLogements {
   flex-flow: row wrap;
 }
 
+figure:hover {
+    transform: scale(1.02);
+}
+
+.item:hover {
+    transform: scale(1.02);
+}
+
+
 /* HEBERGEMENTS */
 .hebergements {
 background-color: #F2F2F2;
@@ -287,11 +296,6 @@ margin-bottom: 20px;
 }
 
 
-
-
-
-
-
 /* LES PLUS POPULAIRES */
 .LesPlusPop {
 background: #F2F2F2;
@@ -301,26 +305,99 @@ min-height: 519px;
 margin-bottom: 20px;
 }
 
-.stonk {
+.LesPlusPop .etoilesnote {
+    position: absolute;
+    bottom: 5%;
+}
+
+#LesPlusPop .stonk {
     display: flex;
     justify-content: space-between;
 }
 
-.group-item-Pop {
+.LesPlusPop .group-item {
+    flex-direction: column;
+}
+
+.LesPlusPop .group-item figure {
+    width: auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    border-radius: 20px;
+    flex-direction: row;
+}
+
+.LesPlusPop .group-item figure img {
+    max-width: 100px;
+    max-height: initial;
+    height: 115px;
+    border-radius: 20px 0 0 20px;
+}
+
+/* Médias Hebergements et Populaires */
+@media (max-width:640px) {
+    #hebergementsSection .hebergementsClassiques {
+        order: 1;
+        flex: 1;
+        margin-right: 0%;
+    }
+}
+
+@media (max-width:640px) {
+    #hebergementsSection .LesPlusPop {
+        order: 0;
+        flex: 0 1 100%;
+    }
+}
+
+@media (max-width:640px) {
+    #hebergementsSection .hebergements {
+        background: #F2F2F2;
+        border-radius: 0px !important;
+        padding: 30px 25px;
+        min-height: 519px;
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:640px) {
+    #hebergementsSection .LesPlusPop {
+        background: #F2F2F2;
+        border-radius: 0px !important;
+        padding: 30px 25px;
+        min-height: 519px;
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:640px) {
+    #hebergementsSection .group-item {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:640px) {
+    .hebergementsClassiques .hebergements {
+        background: white !important;
+    }
+}
+
+@media (max-width:640px) {
+    #hebergementsSection .hebergements .group-item figure {
+        transform: scale(1.05);
+        width: auto;
+    }
+}
+
+@media (max-width:640px) {
+    #hebergementsSection .LesPlusPop .group-item figure {
+        transform: scale(1.05);
+        width: auto;
+    }
 }
 
 
-figure:hover {
-    transform: scale(1.02);
-}
 
-.item:hover {
-    transform: scale(1.02);
-}
 
 
 
