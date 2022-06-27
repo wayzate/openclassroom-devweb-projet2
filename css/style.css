@@ -4,8 +4,6 @@
   font-family: "Raleway", "Sans serif";
 }
 
-
-
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -22,24 +20,62 @@
 }
 
 .header {
-  display: flex;
-  background-color: yellowgreen;
-  justify-content: space-between;
-  align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+
+header a:hover /* Apparence au survol des liens */ {
+   text-decoration: underline;
+}
+
 .headerLeftImg {
-  background-color: palevioletred;
+  background-color: white;
 }
 .headerLinks {
   display: flex;
-  background-color: lightgreen;
+  background-color: white;
   align-items: center;
 }
 
 .headerLink {
-  background-color: purple;
+  background-color: white;
   border-top: 2px solid grey;
 }
+
+
+.menu {
+display: flex;
+flex-wrap: wrap;
+}
+
+.nav-hebergements {
+color: royalblue;
+text-align: center;
+border-top: 2px solid #0065FC;
+margin: 20px 0;
+padding: 20px;
+
+}
+
+.nav-activites {
+text-align: center;
+margin: 15px 0;
+padding: 20px;
+
+}
+
+.nav-inscription {
+color: royalblue;
+text-align: center;
+margin: 15px 0;
+padding: 20px;
+
+}
+
+
+
+
 
 /* RECHERCHE */
 
@@ -224,6 +260,7 @@ p.NbLogements {
 .hebergementsSection {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
 }
 
 figure:hover {
@@ -237,11 +274,13 @@ figure:hover {
 
 /* HEBERGEMENTS */
 .hebergements {
-background-color: #F2F2F2;
-border-radius: 20px;
-padding: 30px 25px;
-min-height: 519px;
-margin-bottom: 20px;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  padding: 30px 25px;
+  min-height: 519px;
+  max-width: 55%;
+  margin: 20px;
+  margin-bottom: 20px;
 }
 
 .hebergementsClassiques {
@@ -305,15 +344,18 @@ min-height: 519px;
 margin-bottom: 20px;
 }
 
+.LesPlusPopHeader {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .LesPlusPop .etoilesnote {
     position: absolute;
     bottom: 5%;
 }
 
-#LesPlusPop .stonk {
-    display: flex;
-    justify-content: space-between;
-}
 
 .LesPlusPop .group-item {
     flex-direction: column;
@@ -498,9 +540,10 @@ footer a:hover /* Apparence au survol des liens */ {
 /* CSS général de la page */
 
 
-body
-{
-  margin: auto;
+body {
+     padding-right: 20px;
+    padding-left: 20px;
+
 }
 
 main

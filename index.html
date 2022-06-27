@@ -14,13 +14,15 @@
     <div class="container">
         <header class="header">
             <div class="logoBooki">
-                <img class="headerLeftImg" href="#" src="images/logo/Booki@3x.png" alt="logo de booki"> 
+                <img class="headerLeftImg" href="#" src="images/logo/Booki.png" alt="logo de booki"> 
             </div>
-            <nav class="headerLinks">
-                <a href="#hébergements" class="headerLink">Hébergements</a>
-                <a href="#activités" class="headerLink">Activités</a>
-                <a href="#" class="headerLink">S'inscrire</a>
-            </nav>
+            <div class="menu">
+                <nav class="headerLinks">
+                    <a href="#monancre1" class="nav-hebergements">Hébergements</a>
+                    <a href="#monancre2" class=" ">Activités</a>
+                    <a href="#" class="nav-inscription"><strong>S'inscrire</strong></a>
+                </nav>
+            </div>
         </header>
 
         <!-- Zone de recherche -->
@@ -76,7 +78,7 @@
 
             <!-- Zone activités -->
             <main>
-                <section class="hebergementsSection">
+                <section id="monancre1" class="hebergementsSection">
                     <div class="hebergements">
                         <h1>Hebergements à Marseille</h1>
 
@@ -144,9 +146,10 @@
                     </div>
 
                     <div class="LesPlusPop">
-                        <div class="stonk"><i class="fas fa-chart-line"></i></div>
-                        <h1>Les plus populaires</h1>
-
+                        <div class="LesPlusPopHeader">
+                            <h1>Les plus populaires</h1>
+                            <i class="fas fa-chart-line"></i>
+                        </div>
                         <div class="group-item">
                             <figure>
                             <img src="images/hebergements/4_small/soleil-du-matin.jpg"/>
@@ -188,7 +191,7 @@
 
 
 
-                <section class="activitiesSection">
+                <section id="monancre2" class="activitiesSection">
                     <div class="ActiMars">
                         <h1>Activités à Marseille</h1>
                         <ul class="flex-container">
