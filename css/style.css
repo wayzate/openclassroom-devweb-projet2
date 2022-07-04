@@ -105,6 +105,7 @@ form.recherche button[type="none"] {
 
 form.recherche button[type="submit"] {
   display: flex;
+  align-items: center;
   background: #0065FC;
   border: 1px #0065FC solid;
   border-radius: 0 15px 15px 0;
@@ -169,7 +170,8 @@ form.recherche input {
 .filtres {
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
+  padding-top: 20px;
+
 }
 
 .filtres,
@@ -181,9 +183,9 @@ form.recherche input {
 }
 
 .filtres .title {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-top: inherit;
-  padding-right: 20px;
+  padding-right: 30px;
 }
 
 .filtres .boutonfiltre {
@@ -191,9 +193,9 @@ form.recherche input {
   justify-content: space-between;
   border-radius: 200px;
   border: 2px #F2F2F2 solid;
-  height: 50px;
+  height: 40px;
   position: relative;
-  padding-left: 55px;
+  padding-left: 50px;
   padding-right: 14px;
   margin-right: 20px;
   margin-bottom: 10px;
@@ -214,10 +216,10 @@ form.recherche input {
 }
 
 .filtres .boutonfiltre i {
-  line-height: 50px;
+  line-height: 40px;
   color: #0065FC;
   position: absolute;
-  width: 50px;
+  width: 40px;
   text-align: center;
   background: #DEEBFF;
   left: -2px;
@@ -226,6 +228,7 @@ form.recherche input {
 
 .boutonfiltre p {
   margin: auto;
+  font-size: 16px;
 }
 
 
@@ -236,9 +239,9 @@ form.recherche input {
 
 .nombrelogementstxt i {
   border: 2px solid #F2F2F2;
-  width: 29px;
+  width: 20px;
   line-height: 25px;
-  font-size: 14px;
+  font-size: 12px;
   color: #0065FC;
   text-align: center;
   border-radius: 100%;
@@ -246,7 +249,7 @@ form.recherche input {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 29px;
+  height: 20px;
 }
 
 p.NbLogements {
@@ -283,8 +286,13 @@ figure:hover {
   padding: 30px 25px;
   min-height: 519px;
   max-width: 55%;
-  margin: 20px;
+  margin-top: 20px;
   margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.hebergements h1 {
+ margin-bottom: 25px;
 }
 
 .hebergementsClassiques {
@@ -348,11 +356,17 @@ figure:hover {
   margin-bottom: 20px;
 }
 
+
 .LesPlusPopHeader {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 25px;
+}
+
+.blackstar {
+ font-size: 20px;
 }
 
 .LesPlusPop .etoilesnote {
@@ -515,6 +529,7 @@ figure:hover {
 
 footer h3 {
   color: black;
+  margin-top: 10px;
 }
 
 footer a {
@@ -533,13 +548,13 @@ footer a:hover /* Apparence au survol des liens */ {
 }
 
 .col_footer {
+  font-size: 14px;
   padding: 20px;
+  padding-bottom: 40px;
   width: 100%;
-  padding-left: 10%;
   display: flex;
   flex-direction: column;
-  line-height: 25px;
-  margin-right: 15px;
+  line-height: 30px;
   color: black;
 }
 
@@ -555,7 +570,6 @@ main {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: 20px;
 }
 
 
