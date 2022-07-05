@@ -80,18 +80,29 @@ header a:hover /* Apparence au survol des liens */ {
   flex-direction: row;
 }
 
+.formSearch input {
+  outline: none;
+}
+
 ::-webkit-input-placeholder {
   color: black;
 }
 
-::-ms-input-placeholder {
+:-ms-input-placeholder {
+  color: black;
+}
+
+:-moz-placeholder {
+  color: black;
+}
+
+::-moz-placeholder {
   color: black;
 }
 
 input::placeholder {
   color: black;
 }
-
 
 form.recherche button[type="none"] {
   background: #F2F2F2;
@@ -309,19 +320,19 @@ figure:hover {
 }
 
 .group-item img {
-  height: 7rem;
+  height: 112px;
   object-fit: cover;
   max-width: 100%;
   width: 100%;
   max-height: 100%;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 16px 16px 0 0;
 }
 
 .group-item figure {
   width: calc(100% / 3.3);
   background: #FFF;
-  padding: 0.3rem;
-  border-radius: 1.25rem;
+  padding: 5px;
+  border-radius: 20px;
   margin: 0 0 30px 0;
   box-shadow: 0px 0px 10px #55555538;
   cursor: pointer;
@@ -579,17 +590,17 @@ h1 {
 
 
 h2 {
-  font-size: 1.5em;
+  font-size: 24px;
   font-weight: bold;
 }
 
 h3 {
-  font-size: 1.18em;
+  font-size: 19px;
   font-weight: bold;
 }
 
 p {
-  font-size: 0.9em;
+  font-size: 14.4px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
