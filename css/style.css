@@ -6,7 +6,7 @@
 
 .container {
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 60px;
 }
 
 .main {
@@ -33,6 +33,8 @@ header a:hover /* Apparence au survol des liens */ {
 
 .headerLeftImg {
   background-color: white;
+  margin-top: 55px;
+  margin-left: 15px;
 }
 .headerLinks {
   display: flex;
@@ -49,31 +51,32 @@ header a:hover /* Apparence au survol des liens */ {
 .menu {
   display: flex;
   flex-wrap: wrap;
+  font-size: 19px;
 }
 
 .nav-hebergements {
-  color: royalblue;
+  color: #0065FC;
   text-align: center;
-  border-top: 2px solid #0065FC;
-  padding: 40px;
-
+  border-top: 3px solid #0065FC;
+  padding: 57px 30px 35px 30px;
 }
 
 .nav-activites {
   text-align: center;
-  padding: 40px;
+  padding: 57px 0px 35px 50px;
 }
 
 
 /* RECHERCHE */
 .searchzone {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .searchzone h1 {
-  margin: 15px 0 0 0;
+  margin: 45px 0 0 0;
   display: flex;
   flex-direction: column;
+  font-size: 26px;
 }
 
 .formSearch {
@@ -106,13 +109,14 @@ input::placeholder {
 }
 
 form.recherche button[type="none"] {
-  background: #F2F2F2;
-  border: 1px #F2F2F2 solid;
-  padding: 5px 15px;
-  font-size: 15px;
-  border-radius: 15px 0 0 15px;
-  padding-top: 7px;
+  background: #F4F4F4;
+  border: 1px #F4F4F4 solid;
+  padding: 20px;
+  font-size: 21px;
+  border-radius: 20px 0 0 20px;
+  padding-top: 10px;
   padding-bottom: 10px;
+  line-height: 2;
 }
 
 form.recherche button[type="submit"] {
@@ -120,10 +124,10 @@ form.recherche button[type="submit"] {
   align-items: center;
   background: #0065FC;
   border: 1px #0065FC solid;
-  border-radius: 0 15px 15px 0;
+  border-radius: 0 22px 22px 0;
   color: #FFF;
-  height: 43px;
-  padding: 0px 15px;
+  height: 65px;
+  padding: 0px 20px;
 }
 
 @media (max-width:768px) {
@@ -131,6 +135,10 @@ form.recherche button[type="submit"] {
     border-radius: 15px 15px 15px 15px !important;
     margin-left: -15px !important;
   }
+}
+
+.textbtn {
+  font-size: 21.5px;
 }
 
 @media (max-width:768px) {
@@ -164,10 +172,10 @@ form.recherche {
 form.recherche input {
   background: transparent;
   border: 1px #F2F2F2 solid;
-  padding-left: 15px;
+  padding-left: 20px;
   padding-right: 20px;
   font-weight: bold;
-
+  font-size: 21.5px;
 }
 
 
@@ -176,14 +184,14 @@ form.recherche input {
 
 .boutonfiltre {
   font-weight: bold;
-  font-size: 15px;
+  font-size: 24px;
 }
 
 .filtres {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-
+/*  display: flex;
+  flex-direction: column;*/
+  padding-top: 26px;
+  font-size: 21.5px;
 }
 
 .filtres,
@@ -195,21 +203,22 @@ form.recherche input {
 }
 
 .filtres .title {
-  margin-bottom: 30px;
-  padding-top: inherit;
-  padding-right: 30px;
+  margin-bottom: 40px;
+  margin-top: 28px;
+  padding-right: 38px;
+  padding-left: 10px;
 }
 
 .filtres .boutonfiltre {
   display: flex;
   justify-content: space-between;
-  border-radius: 200px;
-  border: 2px #F2F2F2 solid;
-  height: 40px;
+  border-radius: 40px;
+  border: 2.5px #D9D9D9 solid;
+  height: 60px;
   position: relative;
-  padding-left: 50px;
-  padding-right: 14px;
-  margin-right: 20px;
+  padding-left: 70px;
+  padding-right: 25px;
+  margin-right: 25px;
   margin-bottom: 10px;
   transition: transform .2s;
   cursor: pointer;
@@ -228,40 +237,42 @@ form.recherche input {
 }
 
 .filtres .boutonfiltre i {
-  line-height: 40px;
+  line-height: 60px;
+  width: 60px;
   color: #0065FC;
   position: absolute;
-  width: 40px;
   text-align: center;
   background: #DEEBFF;
-  left: -2px;
+  left: -3px;
+  top: -3px;
   border-radius: 100%;
 }
 
 .boutonfiltre p {
   margin: auto;
-  font-size: 16px;
+  font-size: 21.5px;
 }
 
 
 .nombrelogementstxt {
-  padding: 5px 0;
+  margin-top: 5px;
+  margin-left: 5px;
   display: inline-flex;
 }
 
 .nombrelogementstxt i {
-  border: 2px solid #F2F2F2;
-  width: 20px;
-  line-height: 25px;
-  font-size: 12px;
+  border: 2px solid #D9D9D9;
+  /*line-height: 25px;*/
+  font-size: 14px;
   color: #0065FC;
   text-align: center;
   border-radius: 100%;
-  margin-right: 5px;
+  margin-right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20px;
+  height: 30px;
+  width: 30px;
 }
 
 p.NbLogements {
@@ -272,8 +283,15 @@ p.NbLogements {
 
 /* COMMUM HEB et POP */
 .etoilesnote {
+  margin-top: 5px;
   color: #0065FC;
-  font-size: 12px;
+  font-size: 14px;
+}
+
+.etoilesnotegrise {
+  margin-top: 5px;
+  color: #D2D2D2;
+  font-size: 14px;
 }
 
 figure:hover {
@@ -297,18 +315,36 @@ figure:hover {
   border-radius: 20px;
   padding: 30px 25px;
   min-height: 519px;
-  flex-basis: 62%;
+  flex-basis: 64%;
   margin-bottom: 20px;
 /*  margin-right: 50px;*/
 }
 
 .hebergements h1 {
- margin-bottom: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 25px;
+}
+
+.LesPlusPop h1 {
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+}
+
+.LesPlusPop .etoilesnote {
+  margin-top: 40px;
+}
+
+.LesPlusPopCardTitle {
+  font-size: 18px;
 }
 
 .hebergementsClassiques {
   order: 1;
   flex: 1;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 .LesPlusPopCardsContainer {
@@ -320,33 +356,37 @@ figure:hover {
 }
 
 .LesPlusPopCardsContainer img {
-  min-width: 120px;
-  min-height: 150px;
-  height: 90px;
+/*  min-height: 165px;
+  height: 85px;*/
+  min-width: 155px;
   object-fit: cover;
+  flex-basis: 30%;
   max-width: 30%;
   width: 30%;
   max-height: 100%;
   border-radius: 16px 0 0 16px;
+  margin-top: 5px;
 }
 
 .LesPlusPopCardsContainer figure {
-/*  min-width: 220px;
-  max-width: 31%;*/
-  /*height: 120px;*/
+/*  max-width: 31%;*/
+  min-width: 285px;
+  min-height: 170px;
+  height: 170px;
   display: flex;
-  width: 90%;
+  width: 95%;
   background: #FFF;
   padding: 5px;
-  border-radius: 20px;
-  margin: 0 0 20px 0;
+  padding-top: 0px;
+  border-radius: 25px;
+  margin: 0 0 35px 0;
   box-shadow: 0px 0px 10px #55555538;
   cursor: pointer;
   transition: transform .2s;
 }
 
 .LesPlusPopCardsContainer figure figcaption {
-  padding: 10px;
+  padding: 15px 15px 15px 25px;
   position: relative;
 }
 
@@ -355,12 +395,12 @@ figure:hover {
 }
 
 .LesPlusPopCardsContainer figure figcaption p:first-child {
-  font-size: 14px;
+  font-size: 19px;
 }
 
 .LesPlusPopCardsContainer figure figcaption p:nth-child(2) {
-  font-size: 12px;
-  margin: 5px 0;
+  font-size: 17.5px;
+  margin: 10px 0;
 }
 
 .hebergementsCardsContainer {
@@ -371,9 +411,9 @@ figure:hover {
 }
 
 .hebergementsCardsContainer img {
-  min-width: 112px;
-  min-height: 112px;
-  height: 112px;
+  min-width: 135px;
+  min-height: 135px;
+  height: 135px;
   object-fit: cover;
   max-width: 100%;
   width: 100%;
@@ -383,11 +423,11 @@ figure:hover {
 
 .hebergementsCardsContainer figure {
   min-width: 150px;
-  width: 31%;
+  width: 30%;
   background: #FFF;
   padding: 5px;
   border-radius: 20px;
-  margin: 0 0 20px 0;
+  margin: 0 0 35px 0;
   box-shadow: 0px 0px 10px #55555538;
   cursor: pointer;
   transition: transform .2s;
@@ -403,11 +443,11 @@ figure:hover {
 }
 
 .hebergementsCardsContainer figure figcaption p:first-child {
-  font-size: 14px;
+  font-size: 19px;
 }
 
 .hebergementsCardsContainer figure figcaption p:nth-child(2) {
-  font-size: 12px;
+  font-size: 16px;
   margin: 5px 0;
 }
 
@@ -416,29 +456,35 @@ figure:hover {
 .LesPlusPop {
   background: #F2F2F2;
   border-radius: 20px;
-  padding: 30px 25px;
+  padding: 30px 25px 5px 25px;
   min-height: 519px;
   min-width: 300px;
   flex-basis: 31%;
   margin-bottom: 20px;
+
 }
 
+.afficherPlus {
+  margin-left: 30px;
+  font-size: 21.5px;
+}
 
 .LesPlusPopHeader {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 8px;
 }
 
 .blackstar {
- font-size: 20px;
+ font-size: 24px;
+ margin-top: -6px;
+ margin-right: 20px;
 }
 
 .LesPlusPop .etoilesnote {
   position: absolute;
-  bottom: 5%;
 }
 
 
@@ -461,7 +507,7 @@ figure:hover {
 
 /* Médias Hebergements et Populaires */
 @media (max-width:768px) {
-  #hebergementsSection .hebergementsClassiques {
+  .hebergementsSection .hebergementsClassiques {
     order: 1;
     flex: 1;
     margin-right: 0%;
@@ -469,15 +515,15 @@ figure:hover {
 }
 
 @media (max-width:768px) {
-  #hebergementsSection .LesPlusPop {
+  .hebergementsSection .LesPlusPop {
     order: 0;
     flex: 0 1 100%;
   }
 }
 
 @media (max-width:768px) {
-  #hebergementsSection .hebergements {
-    background: #F2F2F2;
+  .hebergementsSection .hebergements {
+    background: #D9D9D9;
     border-radius: 0px !important;
     padding: 30px 25px;
     min-height: 519px;
@@ -487,8 +533,8 @@ figure:hover {
 }
 
 @media (max-width:768px) {
-  #hebergementsSection .LesPlusPop {
-    background: #F2F2F2;
+  .hebergementsSection .LesPlusPop {
+    background: #D9D9D9;
     border-radius: 0px !important;
     padding: 30px 25px;
     min-height: 519px;
@@ -498,7 +544,7 @@ figure:hover {
 }
 
 @media (max-width:768px) {
-  #hebergementsSection .group-item {
+  .hebergementsSection .group-item {
     flex-direction: column;
   }
 }
@@ -510,14 +556,14 @@ figure:hover {
 }
 
 @media (max-width:768px) {
-  #hebergementsSection .hebergements .group-item figure {
+  .hebergementsSection .hebergements .group-item figure {
     transform: scale(1.05);
     width: auto;
   }
 }
 
 @media (max-width:768px) {
-  #hebergementsSection .LesPlusPop .group-item figure {
+  .hebergementsSection .LesPlusPop .group-item figure {
     transform: scale(1.05);
     width: auto;
   }
@@ -535,6 +581,8 @@ figure:hover {
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
+  margin-top: 35px;
+  /*margin-bottom: 10px;*/
 }
 
 .activitiesSection .flex-container {
@@ -543,6 +591,7 @@ figure:hover {
   flex-flow: row wrap;
   /*flex-wrap: nowrap;*/
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .activiteimg {
@@ -552,10 +601,17 @@ figure:hover {
 }
 
 .activite-card-title {
-  margin-top: 10px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  flex-basis: 16%;
+  margin-top: 25px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.activite-card-title1 {
+  margin-top: 20px;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  font-size: 20px;
 }
 /*
 .activite-card span {
@@ -564,17 +620,16 @@ figure:hover {
 }
 */
 .activiteimg img {
-  height: 90%;
-  max-height: 200px;
+  height: 100%;
+  max-height: 465px;
   width: 100%;
   object-fit: cover;
-  border-radius: 20px 20px 0 0;
-
+  border-radius: 30px 30px 0 0;
 }
 
 .activiteLittleimg1 img {
   /*height: 80%;*/
-  max-height: 85px;
+  max-height: 200px;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
@@ -582,7 +637,7 @@ figure:hover {
 
 .activiteLittleimg2 img {
   /*height: 90%;*/
-  max-height: 75px;
+  max-height: 145px;
   width: 100%;
   object-fit: cover;
   border-radius: 20px 20px 0 0;
@@ -595,7 +650,7 @@ figure:hover {
   border-radius: 20px;
   -webkit-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
   -moz-box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
-  box-shadow: 0 5px 40px -20px rgba(0, 0, 0, .75);
+  box-shadow: 0 5px 25px -20px rgba(0, 0, 0, .75);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -610,7 +665,7 @@ figure:hover {
 .activite-card {
   display: flex;
   flex-basis: 23%;
-  height: 250px;
+  height: 535px;
   border-radius: 15px;
   min-width: 200px;
   /*background-color: salmon;*/
@@ -663,11 +718,13 @@ figure:hover {
   color: black;
   width: 100%;
   margin-top: 50px;
+  padding-top: 15px;
 }
 
 footer h3 {
   color: black;
   margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 footer a {
@@ -676,7 +733,7 @@ footer a {
 
 footer ul {
   list-style-type: none;
-  color: #464646;
+  color: black;
   margin: 0px;
   padding: 0px;
 }
@@ -686,13 +743,14 @@ footer a:hover /* Apparence au survol des liens */ {
 }
 
 .col_footer {
-  font-size: 14px;
+  font-size: 18px;
   padding: 20px;
   padding-bottom: 40px;
+  padding-left: 0px;
   width: 31%;
   display: flex;
   flex-direction: column;
-  line-height: 30px;
+  line-height: 36px;
   color: black;
 }
 
@@ -708,11 +766,12 @@ main {
   flex-direction: column;
   margin-left: 50px;
   margin-right: 50px;
+  margin-top: 25px;
 }
 
 
 h1 {
-  font-size: 20px
+  font-size: 26px
 }
 
 
@@ -722,12 +781,12 @@ h2 {
 }
 
 h3 {
-  font-size: 19px;
+  font-size: 21px;
   font-weight: bold;
 }
 
 p {
-  font-size: 14.4px;
+  font-size: 19px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
